@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Trabajo práctico Unidad N° 1 (optativo)</title>
+</head>
+
+<body>
+  <form action="#" class="form">
+    <div class="form-group">
+      <label for="">Nombre *</label>
+      <input type="text" class="form-input" name="name" id="name_id" placeholder="Ingrese sú nombre" minlength="2"
+        required>
+    </div>
+
+    <div class="form-group">
+      <label for="">Apellido *</label>
+      <input type="text" class="form-input" name="surname" id="surname_id" placeholder="Ingrese sú Apellido"
+        minlength="2" required>
+    </div>
+
+    <div class="form-group">
+      <label for="">DNI *</label>
+      <input type="number" class="form-input" name="DNI" id="dni_id" placeholder="Ingrese sú DNI"
+        onchange="validateIdentityDocument()" required>
+    </div>
+    <div id="error_dni" class="error_dni"></div>
+
+    <div class="form-group">
+      <label for="">Email *</label>
+      <input type="email" class="form-input" name="email" id="email_id" placeholder="Ingrese sú email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="">Teléfono *</label>
+      <input type="number" class="form-input" name="phone" id="phone_id" placeholder="Ingrese sú número de teléfono"
+        required>
+    </div>
+
+    <div class="form-group">
+      <label for="insurance_type">Tipo de seguro *</label>
+      <select name="insurance_type" id="insurance_type_id" onchange="getInsuranceType()">
+        <option value="1">Básico</option>
+        <option value="2">Intermedio</option>
+        <option value="3">Premium</option>
+      </select>
+    </div>
+    <div class="insurance_types_label" id="insuranceTypeSelected"></div>
+    <div class="form-group form-group-submit">
+      <button class="form-button" type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
+<script src="./script/script.js"></script>
+
+</html>

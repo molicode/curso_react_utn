@@ -1,0 +1,83 @@
+/*simportar fuente */
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* ================================ aplicar estilo de fuente a todo el body */
+body {
+  font-family: "Muli", sans-serif;
+}
+
+.form {
+  max-width: 30rem;
+  margin: 2rem auto;
+}
+
+/* ================================ aplicar estilo a los inputs */
+.form-input {
+  display: block;
+  width: 100%;
+  height: 20px;
+  border: 1px solid #fafafa;
+  border-radius: 4px;
+  padding: 10px 16px;
+  box-shadow: 1px 1px 2px 0 rgba(51, 51, 51, 0.2) inset;
+  background-color: #fff;
+  background-clip: padding-box;
+  color: #999;
+  font-size: 16px;
+  font-weight: normal;
+  transition: all 250ms;
+}
+
+.form-input:required:focus:invalid {
+  border: 1px solid red;
+  color: red;
+  box-shadow: 0 0 0 1px;
+}
+
+.error_dni {
+  color: red;
+}
+
+.form-input:focus:required {
+  border-color: #02ffd0;
+  outline: 0 none;
+}
+
+/* ================================ label de tipo de seguro */
+.insurance_types_label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+/* ================================ botón */
+.form-button {
+  padding: 1.5rem 2rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  background-color: #1c99ca;
+  border: 0;
+  border-radius: 0.125rem;
+  transition: background-color 400ms;
+}
+.form-button:hover,
+.form-button:focus {
+  background-color: #0b5b7a;
+}
+
+/* ================================ group */
+
+.form-group-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}

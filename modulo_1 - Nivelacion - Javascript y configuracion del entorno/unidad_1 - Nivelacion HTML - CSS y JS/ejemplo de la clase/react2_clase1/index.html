@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>React Clase 1</title>
+    </head>
+    
+    <body>
+        <form name="registro" onsubmit="registrarse(); return false">
+            <div>
+                <label for="">Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre_id">
+            </div>
+            <div id="error_nombre"></div>
+            <div>
+                <label for="">Apellido</label>
+                <input type="text" name="apellido" id="apellido_id">
+            </div>
+            <div>
+                <label for="">Edad</label>
+                <input type="number" name="edad" id="edad_id">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email" id="email_id">
+            </div>
+            <div>
+                <label for="">Curso</label>
+                <select name="curso" id="curso_id" onchange="handleChange()">
+                    <option value="1">php</option>
+                    <option value="2">React</option>
+                    <option value="3">Js</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Contraseña</label>
+                <input type="password" name="password" id="password_id">
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
+    </body>  
+    <script src="script.js"></script>  
+</html>
