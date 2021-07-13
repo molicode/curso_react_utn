@@ -8,6 +8,7 @@ body {
   height: 100%;
 }
 
+/* ================================ aplicar estilo al botón */
 .button {
   width: 75px;
   height: 75px;
@@ -20,6 +21,7 @@ body {
   border: none;
 }
 
+/* ================================ aplicar estilo al textview */
 .textview {
   width: 307px;
   margin: 5px;
@@ -30,6 +32,7 @@ body {
   font-family: "Muli", sans-serif;
 }
 
+/* ================================ aplicar principal */
 .main {
   position: absolute;
   top: 50%;
