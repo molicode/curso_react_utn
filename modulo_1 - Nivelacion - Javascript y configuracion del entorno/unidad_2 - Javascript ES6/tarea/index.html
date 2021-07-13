@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h2>JavaScript Functions</h2>
+  <p>Do a calculation and then display the result.</p>
+
+  <p id="demo"></p>
+
+  <script>
+
+    function suma(a, b, callback) {
+      let c = a + b;
+      callback();
+    }
+
+
+
+    function displayer() {
+      console.log("La suma fue ejecutada");
+    }
+
+    suma(5, 5, displayer);
+
+
+
+
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
