@@ -5,6 +5,7 @@ import ItemListContainer from '../../containers/itemListContainer/ItemListContai
 const Home = () => {
     return (
         <>
+          <p>Home</p>
             <ImageMain />
             <ItemListContainer />
         </>
